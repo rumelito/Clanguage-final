@@ -1,0 +1,538 @@
+/*----- BSIT-1F -----
+---- GROUP 4 ------
+TOMOBO, ANDRE D.R
+NOCETE, MARK JOSEPH R.
+MONTALBO, ROMMEL M.
+SOLIMAN, JOSE ENRIQUE S.
+PENOLIAR, ROI GARRIEL P.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define p printf
+#define s scanf
+
+char yesno;
+int num;
+
+int main()
+{
+    system("color 0A");
+    p("\n\t\t          * W * E * L * C * O * M * E *        \n");
+    p("\t\t=================================================\n");
+    p("\t\t||       GGGGGGGGGGGG               444444     ||\n");
+    p("\t\t||      GGGGGGGGGGGGGG             4444444     ||\n");
+    p("\t\t||     GGGGGGGGGGGGGGGG           444 4444     ||\n");
+    p("\t\t||     GGGG        GGGG          444  4444     ||\n");
+    p("\t\t||     GGGG        GGGG         444   4444     ||\n");
+    p("\t\t||     GGGG                    444    4444     ||\n");
+    p("\t\t||     GGGG                   444444444444     ||\n");
+    p("\t\t||     GGGG    GGGGGGGGG     4444444444444     ||\n");
+    p("\t\t||     GGGG    GGGGGGGGG    44444444444444     ||\n");
+    p("\t\t||     GGGG    GGG  GGGG              4444     ||\n");
+    p("\t\t||     GGGG         GGG               4444     ||\n");
+    p("\t\t||     GGGG         GGG               4444     ||\n");
+    p("\t\t||     GGGGGGGGGGGGGGG                4444     ||\n");
+    p("\t\t||      GGGGGGGGGGGGG                 4444     ||\n");
+    p("\t\t||       GGGGGGGGGGG                  4444     ||\n");
+    p("\t\t=================================================");
+    p("\n\t\t         * T O * O U R * P R O G R A M *       \n");
+
+    p("\n\t\tDo you want to continue to our program[Y/N]: ");
+    s("%s", &yesno);
+
+        if(yesno=='Y'||yesno=='y'){
+                system("cls");
+                p("\n\t\t      * P R O G R A M * M A I N * M E N U *    \n");
+                p("\t\t===================================================\n");
+                p("\t\t||[1] INFORMATION                                ||\n");
+                p("\t\t||[2] AREA OF TRIANGLE                           ||\n");
+                p("\t\t||[3] TEMPERATURE                                ||\n");
+                p("\t\t||[4] CALCULATOR                                 ||\n");
+                p("\t\t||[5] OPERATOR                                   ||\n");
+                p("\t\t||[6] GRADE COMPUTATION                          ||\n");
+                p("\t\t||[7] CONDITIONAL STATEMENTS                     ||\n");
+                p("\t\t||[8] BITWISE                                    ||\n");
+                p("\t\t||[9] EXIT                                       ||\n");
+                p("\t\t===================================================\n\n");
+
+                p("\t\tSELECT A NUMBER: ");
+                s("%d", &num);
+
+                    switch(num){
+                        case 1:
+                            system("cls");
+                            char name[100], bday[50], ads[100], con[50], email[40],ctzshp[50],fn[50],mn[50],pri[50],sec[50],ter[50],fc[50],sc[50],tc[50];
+                            float grade;
+                            int age;
+
+                            p("\n");
+                            p("------ REGISTRATION FORM ------");
+                            p("\n\n");
+                            p("ENTER YOUR NAME: ");
+                            s(" %50[^\n]", &name);
+                            p("ENTER YOUR AGE: ");
+                            s("%d", &age);
+                            p("ENTER YOUR BIRTHDAY: ");
+                            s(" %50[^\n]", &bday);
+                            p("ENTER YOUR ADDRESS: ");
+                            s(" %50[^\n]", &ads);
+                            p("ENTER YOUR CONTACT NO.: ");
+                            s("%d", &con);
+                            p("ENTER YOUR EMAIL: ");
+                            s(" %50[^\n]", &email);
+                            p("ENTER YOUR CITIZENSHIP: ");
+                            s(" %50[^\n]", &ctzshp);
+                            p("ENTER YOUR FATHER'S NAME: ");
+                            s(" %50[^\n]", &fn);
+                            p("ENTER YOUR MOTHER'S NAME: ");
+                            s(" %50[^\n]", &mn);
+                            p("\n");
+                            p("------ EDUCATIONAL ATTAINMENT ------");
+                            p("\n\n");
+                            p("ENTER YOUR PRIMARY: ");
+                            s(" %50[^\n]", &pri);
+                            p("ENTER YOUR SECONDARY: ");
+                            s(" %50[^\n]", &sec);
+                            p("ENTER YOUR TERTIARY: ");
+                            s(" %50[^\n]", &ter);
+                            p("\n");
+                            p("ENTER YOUR 1ST CHOICE: ");
+                            s(" %50[^\n]", &fc);
+                            p("ENTER YOUR 2ND CHOICE: ");
+                            s(" %50[^\n]", &sc);
+                            p("ENTER YOUR 3RD CHOICE: ");
+                            s(" %50[^\n]", &tc);
+
+                            system("cls");
+
+                            p("\n");
+                            p("------ REGISTRATION FORM ------");
+                            p("\n\n");
+                            p("NAME: %s\n",name);
+                            p("AGE: %d\n",age);
+                            p("BIRTHDAY: %s\n",bday);
+                            p("ADDRESS: %s\n",ads);
+                            p("CONTACT NO.: %d\n",con);
+                            p("EMAIL ADDRESS: %s\n",email);
+                            p("CITIZENSHIP: %s\n",ctzshp);
+                            p("FATHER'S NAME: %s\n",fn);
+                            p("MOTHER'S NAME: %s\n",mn);
+                            p("\n");
+                            p("------ EDUCATIONAL ATTAINMENT ------");
+                            p("\n\n");
+                            p("PRIMARY: %s\n",pri);
+                            p("SECONDARY: %s\n",sec);
+                            p("TERTIARY: %s\n",ter);
+                            p("\n");
+                            p("1ST CHOICE: %s\n",fc);
+                            p("2ND CHOICE: %s\n",sc);
+                            p("3RD CHOICE: %s\n",tc);
+                        break;
+
+                        case 2:
+                            system("cls");
+                            float b, h, A;
+                            p("\nEnter the value of base: ");
+                            s("%f", &b);
+                            p("\nEnter the value of height: ");
+                            s("%f", &h);
+
+                            system("cls");
+
+                            A = (b+h)/2; //P/E/MD/AS    //Area = (Base x Height)/2
+
+                            p("\nThe value of Area is %.10f\n", A);
+                            break;
+
+                        case 3:
+                            system("cls");
+                            p("\n\t\t    * T * E * M * P * E * R * A * T * U * R * E  \n");
+                            p("\t\t===================================================\n");
+                            p("\t\t||[1] CELSIUS                                    ||\n");
+                            p("\t\t||                                               ||\n");
+                            p("\t\t||[2] FAHRENHEIT                                 ||\n");
+                            p("\t\t===================================================\n\n");
+
+                            p("\t\tSELECT A NUMBER: ");
+                            s("%d", &num);
+
+                            switch(num){
+                                float f, c;
+                                case 1:
+                                    system("cls");
+                                    p("\nEnter the Temperature of the Fahrenheit: ");
+                                    s("%f", &f);
+
+                                    c=(f-32)*5/9;
+
+                                    p("\nCelsius = %.3f\n", c);
+                                break;
+
+                                case 2:
+                                    system("cls");
+                                    p("\nEnter the Temperature of the Celsius: ");
+                                    s("%f", &c);
+
+                                    f = (c/5*9)+32;
+
+                                    p("\nFahrenheit = %.1f\n", f);
+                                break;
+                            }
+
+                            break;
+
+                        case 4:
+                            system("cls");
+                            p("\n\t\t     * C * A * L * C * U * L * A * T * O * R *    \n");
+                            p("\t\t===================================================\n");
+                            p("\t\t||[1] BASIC CALCULATOR                           ||\n");
+                            p("\t\t||                                               ||\n");
+                            p("\t\t||[2] EXPONENTIATION                             ||\n");
+                            p("\t\t===================================================\n\n");
+
+                            p("\t\tSELECT A NUMBER: ");
+                            s("%d", &num);
+
+                            switch(num){
+                                case 1:
+                                    system("cls");
+                                    float num1, num2, num3;
+                                    double sum, diff, prod, quo, result;
+                                    printf("\nEnter the value of First number: ");
+                                    scanf("%f", &num1);
+                                    printf("\nEnter the value of Second number: ");
+                                    scanf("%f", &num2);
+                                    printf("\nEnter the value of Third number: ");
+                                    scanf("%f", &num3);
+
+                                    sum = num1+num2 + num3;
+                                    diff = num3-num2;
+                                    prod = num1*num3;
+                                    quo = num1/num2;
+                                    result = pow(num3,num2);
+
+                                    system("cls");
+
+                                    printf("\nThe Sum of %.2f, %.2f and %.2f is %.2f.\n", num1, num2, num3, sum);
+                                    printf("\nThe Difference of %.2f and %.2f is %.2f.\n", num3, num2, diff);
+                                    printf("\nThe Product of %.2f and %.2f is %.2f.\n", num1, num3, prod);
+                                    printf("\nThe Quotient of %.2f and %.2f is %.2f.\n", num1, num2, quo);
+                                    printf("\nThe Result of %.2f raise to %.2f is %.2f.\n", num3, num2, result);
+                                break;
+
+                                case 2:
+                                    system("cls");
+                                    int base, exponent, ans;
+                                    p("\nEnter the value of base: ");
+                                    s("%i", &base);
+                                    p("\nEnter the value of exponent: ");
+                                    s("%i", &exponent);
+
+                                    system("cls");
+
+                                    ans = pow(base, exponent);
+
+                                    p("\nANSWER - %i\n", ans);
+
+                                break;
+
+
+                            }
+                            break;
+
+                        case 5:
+                            system("cls");
+                            p("\n\t\t        * O * P * E * R * A * T * O * R *        \n");
+                            p("\t\t===================================================\n");
+                            p("\t\t||[1] RELATIONAL OPERATOR                        ||\n");
+                            p("\t\t||                                               ||\n");
+                            p("\t\t||[2] LOGICAL OPERATOR                           ||\n");
+                            p("\t\t||                                               ||\n");
+                            p("\t\t||[3] INTEGER COMPARISON                         ||\n");
+                            p("\t\t===================================================\n\n");
+
+                            p("\t\tSELECT A NUMBER: ");
+                            s("%d", &num);
+
+                            switch(num){
+                                case 1:
+                                    system("cls");
+                                    int x = 15;
+                                    int y = 10;
+
+                                    if (x==y)
+                                    {
+                                    printf("\nBoth variables are equal\n");
+                                    }
+
+                                    if (x>y)
+                                    {
+                                    printf("\nx is greather than y\n");
+                                    }
+
+                                    if (x<y)
+                                    {
+                                    printf("\nx is less than y\n");
+                                    }
+
+                                    if (x!=y)
+                                    {
+                                    printf("\nx is not equal to y\n");
+                                    }
+
+                                    if (x<=y)
+                                    {
+                                    printf("\nx is lesser or equal to y\n");
+                                    }
+
+                                    if (x>=y)
+                                    {
+                                    printf("\nx is greater or equal to y\n");
+                                    }
+
+                                    printf ("\nCODES AFTER IF\n");
+                                break;
+
+                                case 2:
+                                    system("cls");
+                                    int z = 10;
+                                    int w = 10;
+                                    int a = 20;
+                                    int b = 21;
+
+                                    if (z==w && a!=b)
+                                    {
+                                    printf("\nz is less than w AND a is equal to b\n");
+                                    }
+
+                                    if(z==w || a==b)
+                                    {
+                                    printf("\nz is less than w OR a is equal to b\n");
+                                    }
+
+                                    if (!(z==w && a==b));
+                                    {
+                                    printf("\nNOT OPERATOR\n");
+                                    }
+
+                                    printf("\nCODES AFTER IF!\n");
+                                break;
+
+                                case 3:
+                                    system("cls");
+                                    int A;
+                                    int B;
+
+                                    printf("\nEnter the value of A: ");
+                                    scanf("%i", &A);
+                                    printf("\nEnter the value of B: ");
+                                    scanf("%i", &B);
+
+                                    if(A>B)
+                                    {
+                                        printf("\nA is greather than B\n");
+                                    }
+                                    if(A<B)
+                                    {
+                                        printf("\nA is less than B\n");
+                                    }
+                                    if(A=B)
+                                    {
+                                        printf("\nBoth variables are equal\n");
+                                    }
+                                    printf("\nCODE AFTER IF!\n");
+                                break;
+                            }
+                            break;
+
+                        case 6:
+                            system("cls");
+                            float quiz, assign, proj, cs, me, grades;
+                            char section[50], year[50];
+
+                                p("|------------- GRADE COMPUTATION -------------|\n\n");
+
+                                p("Name: ");
+                                s(" %100[^\n]", name);
+
+                                p("Section: ");
+                                s("%s", section);
+
+                                p("Year: ");
+                                s("%s", year);
+
+                                p("\nEnter your Quiz Grade: ");
+                                s("%f", &quiz);
+
+                                p("Enter your Assignment Grade: ");
+                                s("%f", &assign);
+
+                                p("Enter your Project Grade: ");
+                                s("%f", &proj);
+
+                                p("Enter your Class Standing Grade: ");
+                                s("%f", &cs);
+
+                                p("Enter your Major Exam Grade: ");
+                                s("%f", &me);
+
+                                grades = (cs*.10)+(quiz*.15)+(assign*.15)+(proj*.20)+(me*.40);
+
+                                system("cls");
+
+                                p("\nYour grade is %.2f ", grades);
+
+                                if(grades>=75)
+                                {
+                                    p("\n\nCongratulations, %s from %s %s, You passed this semester\n\n", name, section, year);
+                                }
+
+                                if(grades<75)
+                                {
+                                    p("\n\nI'm sorry, %s from %s %s, You failed this semester\n\n", name, section, year);
+                                }
+
+                            break;
+
+                        case 7:
+                            system("cls");
+                            p("\n\t\t  * C O N D I T I O N A L * S T A T E M E N T S *\n");
+                            p("\t\t===================================================\n");
+                            p("\t\t||[1] QUALIFIED TO VOTE                          ||\n");
+                            p("\t\t||                                               ||\n");
+                            p("\t\t||[2] POSITIVE OR NEGATIVE                       ||\n");
+                            p("\t\t||                                               ||\n");
+                            p("\t\t||[3] GRADE RANGE                                ||\n");
+                            p("\t\t||                                               ||\n");
+                            p("\t\t||[4] COLOR SELECTION                            ||\n");
+                            p("\t\t===================================================\n\n");
+
+                            p("\t\tSELECT A NUMBER: ");
+                            s("%d", &num);
+
+                            switch(num){
+                                int number;
+                                char color;
+                                case 1:
+                                    system("cls");
+                                    printf("\nEnter your age: ");
+                                    scanf("%i", &age);
+
+                                    if(age>=18){
+                                        printf("\nQualified to Vote\n");
+                                    }
+                                    else {
+                                        printf("\nToo Young!\n");
+                                    }
+                                break;
+                                case 2:
+                                    system("cls");
+                                    printf("\nEnter the number: ");
+                                    scanf("%i", &number);
+                                    if(number>=0){
+                                        printf("\nPOSITIVE NUMBER\n");
+                                    }
+                                    else {
+                                        printf("\nNEGATIVE NUMBER\n");
+                                    }
+                                break;
+                                case 3:
+                                    system("cls");
+                                    printf("\nEnter your grade: ");
+                                    scanf("%f", &grade);
+
+                                    if(grade>=90 && grade<=100){
+                                        printf("\nGRADE: A\n");
+                                    }
+                                    else if(grade>=80 && grade<90){
+                                        printf("\nGRADE: B\n");
+                                    }
+                                    else if(grade>=70 && grade<80){
+                                        printf("\nGRADE: C\n");
+                                    }
+                                    else if(grade>=60 && grade<70){
+                                        printf("\nGRADE: D\n");
+                                    }
+                                    else if(grade>=0 && grade<60){
+                                        printf("\nGRADE: E\n");
+                                    }
+                                    else {
+                                        printf("\nOUT OF RANGE!\n");
+                                    }
+                                break;
+                                case 4:
+                                    system("cls");
+                                    printf("\nEnter your Color: ");
+                                    scanf(" %c", &color);
+
+                                    if(color=="B" || color=='b'){
+                                        printf("\nBlue\n");
+                                    }
+                                    else if(color=="R" || color=='r'){
+                                        printf("\nRed\n");
+                                    }
+                                    else if(color=="G" || color=='g'){
+                                        printf("\nGreen\n");
+                                    }
+                                    else if(color=="Y" || color=='y'){
+                                        printf("\nYellow\n");
+                                    }
+                                    else {
+                                        printf("\nUnknown Color\n");
+                                    }
+                                break;
+                            }
+                            break;
+
+                        case 8:
+                            system("cls");
+                            p("\n\t\t           * B * I * T * W * I * S * E *         \n");
+                            p("\t\t===================================================\n");
+                            p("\t\t||[1] AND                                        ||\n");
+                            p("\t\t||                                               ||\n");
+                            p("\t\t||[2] OR                                         ||\n");
+                            p("\t\t||                                               ||\n");
+                            p("\t\t||[3] XOR                                        ||\n");
+                            p("\t\t===================================================\n\n");
+
+                            p("\t\tSELECT A NUMBER: ");
+                            s("%d", &num);
+
+                            int r = 12;
+                            int m = 25;
+
+                                    if (num==1)
+                                    {
+                                        system("cls");
+                                        printf("\nOUTPUT %d: \n", r & m);
+                                    }
+                                    if (num==2)
+                                    {
+                                        system("cls");
+                                        printf("\nOUTPUT %d: \n", r | m);
+                                    }
+                                    if (num==3)
+                                    {
+                                        system("cls");
+                                        printf("\nOUTPUT %d: \n", r ^ m);
+                                    }
+
+                            break;
+
+                        case 9:
+                                system("cls");
+                                p("\nYou have been Exit!\n");
+                            break;
+
+                        default:
+                                system("cls");
+                                printf("\nENTER A CORRECT NUMBER!\n");break;
+                    }
+        }
+
+    return 0;
+}
+
+
+
